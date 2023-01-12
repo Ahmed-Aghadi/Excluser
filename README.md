@@ -67,15 +67,13 @@ Post creation and chatting feature is added using orbis.
 
 ### Vocdoni
 
-Post creation and chatting feature is added using orbis.
+Different types of polls were created using Vocdoni.
 
 #### Atleast one example:
 
-[Create Post](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/components/UserPage.tsx#L397)
+[Create Election](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/components/UserPage.tsx#L529)
 
-[Send Message](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/components/ChatRoom.tsx#L143)
-
-[Edit Profile](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/components/UserPage.tsx#L797)
+[Fetching Poll Info](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/components/Poll.tsx#L30)
 
 ### Lit Protocol
 
