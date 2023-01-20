@@ -312,7 +312,7 @@ export default function Home() {
             return
         }
         const usersData = await fetch(
-            "https://testnet.tableland.network/query?s=" +
+            "https://testnets.tableland.network/query?s=" +
                 "SELECT * FROM " +
                 tableName +
                 " WHERE did = '" +

@@ -15,17 +15,16 @@ Tableland is used as a decentralized sql database.
 Contract is deployed on polygon mumbai. And contract is verified.
 [smart contract address](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/constants/contractAddress.json#L2)
 
-
-| Tech stack used           |
-| ------------------------- |
-| [Orbis Club](#orbis-club) |
-| [Vocdoni](#vocdoni)       |
-| [Lit Protocol](#lit-protocol) |
-| [Unlock Protocol](#unlock-protocol)       |
-| [Polygon](#polygon)       |
-| [Web3 Storage](#web3-storage) |
-| [Tableland](#tableland) |
-| [Mantine UI](#mantine-ui) |
+| Tech stack used                     |
+| ----------------------------------- |
+| [Orbis Club](#orbis-club)           |
+| [Vocdoni](#vocdoni)                 |
+| [Lit Protocol](#lit-protocol)       |
+| [Unlock Protocol](#unlock-protocol) |
+| [Polygon](#polygon)                 |
+| [Web3 Storage](#web3-storage)       |
+| [Tableland](#tableland)             |
+| [Mantine UI](#mantine-ui)           |
 
 ## Deployements
 
@@ -127,7 +126,7 @@ Tableland is used as a decentralized sql database so content is smart contract i
 
 [Tablename](https://github.com/Ahmed-Aghadi/Excluser/blob/main/client/constants/index.js#L15)
 
-[Tableland Result](https://testnet.tableland.network/query?s=SELECT%20*%20FROM%20main_80001_4676)
+[Tableland Result](https://testnets.tableland.network/query?s=SELECT%20*%20FROM%20main_80001_4676)
 
 ### Mantine UI
 

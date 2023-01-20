@@ -188,9 +188,9 @@ function Profile() {
         setUserAddress(userAddress.toLowerCase())
         // const did = `did:pkh:eip155:80001:${userAddress.toLowerCase()}`
         setUserDid(did)
-        // // const postsData = await fetch("https://testnet.tableland.network/query?s=" + "SELECT * FROM " + postTableName + " LIMIT 10")
+        // // const postsData = await fetch("https://testnets.tableland.network/query?s=" + "SELECT * FROM " + postTableName + " LIMIT 10")
         // const postsData = await fetch(
-        //     "https://testnet.tableland.network/query?s=" +
+        //     "https://testnets.tableland.network/query?s=" +
         //         "SELECT * FROM " +
         //         postTableName +
         //         " WHERE userAddress = '" +
@@ -200,7 +200,7 @@ function Profile() {
         // const postsDataJson = await postsData.json()
         // setPosts(postsDataJson)
         const usersData = await fetch(
-            "https://testnet.tableland.network/query?s=" +
+            "https://testnets.tableland.network/query?s=" +
                 "SELECT * FROM " +
                 tableName +
                 " WHERE did = '" +
