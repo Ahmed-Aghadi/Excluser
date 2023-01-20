@@ -31,7 +31,7 @@ export const OrbisContextProvider = (props: any) => {
                 await orbis.connect()
             }
             if (res && address) {
-                if (res.details.metadata.address !== address.toLowerCase()) {
+                if (res.details.metadata.address.toLowerCase() !== address.toLowerCase()) {
                     await orbis.connect()
                 }
             }

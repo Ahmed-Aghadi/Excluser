@@ -69,6 +69,9 @@ export default function Poll({ pollId, pollType, streamId }: PollProps) {
     }
 
     const vote = async (index: number) => {
+        if (userVote !== -1) {
+            return
+        }
         console.log("voting for ", index)
         const client = new VocdoniSDKClient({
             env: EnvOptions.DEV, // mandatory, can be 'dev' or 'prod'

@@ -50,7 +50,7 @@ export function UserCard({ id, cid, lockAddress, userAddress, did }: UserCardIma
     ])
 
     useEffect(() => {
-        const did = `did:pkh:eip155:80001:${userAddress.toLowerCase()}`
+        // const did = `did:pkh:eip155:80001:${userAddress.toLowerCase()}`
         if (ctx.isLoaded) {
             ;(async () => {
                 const res = await fetch(`https://${cid}.ipfs.nftstorage.link/data.json`)

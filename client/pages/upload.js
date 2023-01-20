@@ -46,24 +46,24 @@ export default function Home() {
         playbackPolicy: { type: "jwt" },
     })
 
-    useEffect(() => {
-        console.log("status", status)
-        if (createdStream) {
-            console.log("createdStream", createdStream)
-            handleSubmitRemaining()
-        }
-    }, [createdStream, status])
+    // useEffect(() => {
+    //     console.log("status", status)
+    //     if (createdStream) {
+    //         console.log("createdStream", createdStream)
+    //         handleSubmitRemaining()
+    //     }
+    // }, [createdStream, status])
 
     const deleteStream = async () => {
-        const response = await fetch(`https://livepeer.studio/api/stream/${createdStream.id}`, {
-            method: "DELETE",
-            headers: {
-                authorization: `Bearer ${process.env.NEXT_PUBLIC_STUDIO_API_KEY}`,
-            },
-        })
-        console.log("response deleteStream", response)
-        // const data = await response.json()
-        // console.log("deleteStream", data)
+        // const response = await fetch(`https://livepeer.studio/api/stream/${createdStream.id}`, {
+        //     method: "DELETE",
+        //     headers: {
+        //         authorization: `Bearer ${process.env.NEXT_PUBLIC_STUDIO_API_KEY}`,
+        //     },
+        // })
+        // console.log("response deleteStream", response)
+        // // const data = await response.json()
+        // // console.log("deleteStream", data)
     }
 
     // Wrapping all calls in an async block
@@ -177,9 +177,12 @@ export default function Home() {
                 return
             }
 
+            const createStreamId = "123"
+
             console.log("ipfs json: ", {
                 description: description,
-                streamId: createdStream.id,
+                // streamId: createdStream.id,
+                streamId: createStreamId,
                 groupId: resGroup.doc,
                 mainChannelId: resChannel.doc,
                 usersChannelId: resChannel1.doc,
@@ -191,7 +194,8 @@ export default function Home() {
                     method: "POST",
                     body: JSON.stringify({
                         description: description,
-                        streamId: createdStream.id,
+                        // streamId: createdStream.id,
+                        streamId: createStreamId,
                         groupId: resGroup.doc,
                         mainChannelId: resChannel.doc,
                         usersChannelId: resChannel1.doc,
@@ -348,9 +352,10 @@ export default function Home() {
         })
         try {
             setIsSubmitted(true)
-            const r = createStream()
-            console.log("r", r)
-            console.log("createdStream", createdStream)
+            // const r = createStream()
+            // console.log("r", r)
+            // console.log("createdStream", createdStream)
+            await handleSubmitRemaining()
         } catch (error) {
             console.log("error", error)
             updateNotification({
